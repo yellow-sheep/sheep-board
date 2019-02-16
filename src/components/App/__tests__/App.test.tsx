@@ -11,7 +11,5 @@ test('App Component renders', () => {
   const wrap = render(<App />)
 
   expect(wrap.getByTestId('toggle-container')).toBeTruthy()
-  expect(wrap.getByTestId('toggle-container').textContent).toBe(
-    '+ Add Container'
-  )
+  expect(wrap.getByTestId('toggle-container').textContent).toBe('Add List')
 })
