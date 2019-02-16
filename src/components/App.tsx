@@ -10,7 +10,7 @@ namespace Layers {
     <Toggle.Consumer>
       {({ on }) => (
         <>
-          {on ? 'The button is on' : 'The button is off'}
+          {on ? 'The button is on!!' : 'The button is off!!'}
           <Layer3 />
         </>
       )}
