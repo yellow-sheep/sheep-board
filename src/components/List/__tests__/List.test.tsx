@@ -1,11 +1,11 @@
 import { render } from 'react-testing-library'
 import React = require('react')
-import Container from '../Container'
+import List from '../List'
 
 describe('Container', () => {
   test('should render default state container', () => {
-    const wrapper = render(<Container />)
+    const wrapper = render(<List />)
 
-    expect(wrapper.container.textContent).toBe('+ Add Group')
+    expect(wrapper.container.textContent).toBe('+ Add Card')
   })
 })
