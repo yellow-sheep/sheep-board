@@ -7,8 +7,8 @@
   "main": "src/index.tsx",
   "scripts": {
     "develop": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
-    "start": "parcel ./src/index.html",
-    "build": "npm run type-check && parcel build ./src/index.html --public-url '/'",
+    "start": "parcel -p 3000 ./src/index.html",
+    "build": "npm run type-check && parcel build -p 3000 ./src/index.html --public-url '/'",
     "prettify": "prettier --write './src/**/*.{ts,tsx}'",
     "test": "jest",
     "test:watch": "jest --watch",
