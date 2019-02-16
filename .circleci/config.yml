@@ -1,29 +1,3 @@
-# version: 2
-# jobs:
-#   build:
-#     docker:
-#       - image: circleci/node:8
-#     steps:
-#       - checkout
-#       - restore_cache: # special step to restore the dependency cache
-#           key: dependency-cache-{{ checksum "package.json" }}
-#       - run:
-#           name: Setup Dependencies
-#           command: yarn install
-#       - save_cache: # special step to save the dependency cache
-#           key: dependency-cache-{{ checksum "package.json" }}
-#           paths:
-#             - ./node_modules
-#       - run: # run tests with yarn
-#           name: Run Test
-#           command: |
-#             ./cc-test-reporter before-build
-#             yarn test
-#             ./cc-test-reporter after-build --exit-code $?
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
 version: 2
 jobs:
   build:
