@@ -6,6 +6,6 @@ describe('Container', () => {
   test('should render default state container', () => {
     const wrapper = render(<List />)
 
-    expect(wrapper.container.textContent).toBe('+ Add Card')
+    expect(wrapper.container.textContent).toBe('Add Card')
   })
 })
