@@ -3,7 +3,7 @@ import React = require('react');
 import List from '../List';
 import 'jest-dom/extend-expect';
 
-describe('Container', () => {
+describe('List', () => {
   afterEach(cleanup);
   test('should render default state container', () => {
     const wrapper = render(<List />);

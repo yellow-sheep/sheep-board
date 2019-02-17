@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Card, { ICard } from '../Card/Card';
+import { InputBox } from '../InputBox/InputBox';
 
 const List: React.SFC = () => {
   const initialCards: ICard[] = [];
@@ -33,31 +34,3 @@ const List: React.SFC = () => {
 };
 
 export default List;
-
-interface InputProps {
-  text?: string;
-  placeholder?: string;
-  name?: string;
-}
-
-const InputBox: React.SFC<InputProps> = ({
-  text = '',
-  placeholder = '',
-  name,
-}) => {
-  const [value, setValue] = React.useState('');
-  React.useEffect(() => {
-    setValue(text);
-  }, []);
-  return (
-    <input
-      name={name}
-      value={value}
-      onChange={e => setValue(e.target.value)}
-      type="text"
-      placeholder={placeholder}
-    />
-  );
-};
-
-export { InputBox };

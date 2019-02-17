@@ -1,7 +1,7 @@
 import { render, cleanup } from 'react-testing-library';
-import { InputBox } from '../../List/List';
 import * as React from 'react';
 import 'jest-dom/extend-expect';
+import { InputBox } from '../InputBox';
 
 describe('InputBox', () => {
   afterEach(cleanup);
