@@ -16,6 +16,7 @@ describe('Board', () => {
 
     fireEvent.click(addListButton);
 
+    expect(wrapper.queryByPlaceholderText(/enter title.../i)).toBeTruthy();
     expect(wrapper.queryByText(/^Add Card$/i)).toBeTruthy();
   });
 });
