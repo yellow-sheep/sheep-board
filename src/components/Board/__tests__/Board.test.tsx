@@ -12,7 +12,6 @@ describe('Board', () => {
 
   test('should display a list on click', () => {
     const wrapper = render(<Board />)
-    wrapper.debug()
     const addListButton = wrapper.getByText(/^Add List$/i)
 
     fireEvent.click(addListButton)

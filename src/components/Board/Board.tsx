@@ -1,3 +1,4 @@
+import './Board.css'
 import * as React from 'react'
 import List from '../List/List'
 
@@ -21,10 +22,17 @@ const Board: React.FunctionComponent<IProps> = ({ lists = [], title = '' }) => {
   }
 
   return (
-    <React.Fragment>
-      {list && list.map(val => <List key={val.id} />)}
+    <div className={'board'}>
+      <div className={'list'}>
+        {list &&
+          list.map(val => (
+            <div key={val.id} className={'list'}>
+              <List />
+            </div>
+          ))}
+      </div>
       <button onClick={e => handleClick(e)}>Add List</button>
-    </React.Fragment>
+    </div>
   )
 }
 
