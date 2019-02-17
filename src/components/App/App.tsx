@@ -1,8 +1,8 @@
-import * as React from 'react'
-import Board from '../Board/Board'
+import * as React from 'react';
+import Board from '../Board/Board';
 
 interface AppProps {
-  onToggle?(on: boolean): void
+  onToggle?(on: boolean): void;
 }
 
 const App: React.SFC<AppProps> = () => {
@@ -10,7 +10,7 @@ const App: React.SFC<AppProps> = () => {
     <div className="container" data-testid="toggle-container">
       <Board />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

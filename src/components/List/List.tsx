@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 const List: React.SFC = () => {
   return (
@@ -10,7 +10,7 @@ const List: React.SFC = () => {
         <button>Add Card</button>
       </div>
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default List
+export default List;
